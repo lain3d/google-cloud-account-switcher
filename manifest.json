@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Google Account Switcher",
+    "version": "1.0",
+    "description": "Automatically add &authuser to Google URLs",
+    "applications": {
+        "gecko": {
+          "id": "{62c6bad5-2c65-4ff1-94b9-c8484ff76493}"
+        }
+    },      
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+}
